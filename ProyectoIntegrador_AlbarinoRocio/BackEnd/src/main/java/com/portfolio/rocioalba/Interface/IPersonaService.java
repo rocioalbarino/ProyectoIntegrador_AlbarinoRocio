@@ -4,15 +4,17 @@ import com.portfolio.rocioalba.Entity.Persona;
 import java.util.List;
 
 public interface IPersonaService {
- //Traer una lista de personas
+
+    //Traer una lista de personas
     public List<Persona> getPersona();
-    
-    //Guardar un objeto de tipo Persona
+
+    //Guardar un objeto de tipo persona
     public void savePersona(Persona persona);
     
-    //Eliminar un objeto pero lo buscamos por ID
+    //Eliminar un usuario pero lo buscamos por ID
     public void deletePersona(Long id);
-    
-    //Buscar una persona por ID
+
+    //Buscar una persona ID
     public Persona findPersona(Long id);
+
 }
